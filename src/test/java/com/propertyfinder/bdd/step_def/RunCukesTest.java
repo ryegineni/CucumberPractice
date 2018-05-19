@@ -10,6 +10,7 @@ import cucumber.api.junit.Cucumber;
 		                   "pretty",
 		                   "json:target/cucumber-report.json", 
 		                   "html:target/cucumber-report.html" },
+							/*tags = {"@regression"},*/
 
 							features="src/test/resources/features/Task2ScenarioC.feature")
 public class RunCukesTest {

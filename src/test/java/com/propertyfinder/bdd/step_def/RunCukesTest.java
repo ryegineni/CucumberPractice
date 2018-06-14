@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 		                   "html:target/cucumber-report.html" },
 							/*tags = {"@regression"},*/
 
-							features="src/test/resources/features/Task2ScenarioC.feature")
+							features="src/test/resources/features/task.feature")
 public class RunCukesTest {
 	
 }

@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import com.propertyfinder.bdd.config.Helper;
 import com.propertyfinder.bdd.pageObjects.HomePage;
 import com.propertyfinder.bdd.pageObjects.SearchPage;
+import com.propertyfinder.bdd.pageObjects.SportsDirectPage;
 
 
 public class PageObjectInit {
@@ -19,6 +20,7 @@ public class PageObjectInit {
 
 	protected static HomePage home = null;
 	protected static SearchPage search = null;
+	protected static SportsDirectPage sports=null;
 
 	public WebDriver getDriver() {
 		if (driver == null) {
@@ -44,6 +46,7 @@ public class PageObjectInit {
 		}
 		home = new HomePage(driver);
 		search = new SearchPage(driver);
+		sports=new SportsDirectPage(driver);
 		return driver;
 
 	}
